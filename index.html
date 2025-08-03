@@ -1,25 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jyothish Kalla | Portfolio</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background: #f4f4f4;
-      padding: 2rem;
-      text-align: center;
-    }
-    h1 {
-      color: #333;
-    }
-  </style>
-</head>
-<body>
-  <h1>Hi, I'm Jyothish 👋</h1>
-  <p>Web Developer with 1 year experience in PHP & CodeIgniter 4</p>
-  <p>Portfolio redesign coming soon!</p>
-</body>
-</html>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalla Jyothish | Full Stack Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+        }
+
+        header {
+            background: linear-gradient(to right, #007bff, #00c6ff);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        .about-section,
+        .project-section,
+        .skills-section {
+            padding: 3rem 0;
+        }
+
+        .project-card {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            align-items: center;
+        }
+
+        .project-card img {
+            max-width: 220px;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .skills-section .icon-box {
+            text-align: center;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .skills-section .icon-box:hover {
+            transform: scale(1.05);
+            background: #e8f0fe;
+        }
+
+        .icon-box i {
+            font-size: 2rem;
+            color: #007bff;
+        }
+
+        footer {
+            background: #f1f1f1;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <img src="your-profile-image.jpg" alt="Profile" width="150" class="rounded-circle shadow mb-3">
+        <h1>Kalla Jyothish</h1>
+        <p>Full Stack Developer | PHP | Python | CodeIgniter 4 | Django | MySQL | jQuery</p>
+    </header>
+
+    <section class="about-section container">
+        <div class="card p-4 shadow-sm border-0"
+            style="background: linear-gradient(to right, #ffffff, #f0f8ff); border-radius: 1rem;">
+            <h2 class="mb-3 text-primary">About Me</h2>
+            <p style="font-size: 1.1rem; line-height: 1.7;">
+                I'm <strong>Kalla Jyothish</strong>, a passionate <strong>Full Stack Developer</strong> currently
+                working at <strong>Peertechz Publications</strong>.
+                I specialize in backend development with PHP, CodeIgniter, and Python while building responsive web apps
+                using Bootstrap, MySQL, and modern front-end frameworks.
+                <br><br>
+                My strength lies in delivering robust academic portals and custom tools that solve real publishing
+                needs. I am always open to learning and evolving in full stack and cloud-based environments.
+            </p>
+        </div>
+    </section>
+
+    <section class="skills-section container">
+        <h2 class="text-center text-primary mb-4">Technical Skills</h2>
+        <div class="row row-cols-2 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="icon-box">
+                    <i class="fab fa-html5"></i>
+                    <p>HTML</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="icon-box">
+                    <i class="fab fa-css3-alt"></i>
+                    <p>CSS</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="icon-box">
+                    <i class="fab fa-bootstrap"></i>
+                    <p>Bootstrap</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="icon-box">
+                    <i class="fab fa-js"></i>
+                    <p>jQuery</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="icon-box">
+                    <i class="fab fa-php"></i>
+                    <p>PHP</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="icon-box">
+                    <i class="fas fa-database"></i>
+                    <p>MySQL</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="icon-box">
+                    <i class="fas fa-code"></i>
+                    <p>CodeIgniter 4</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="icon-box">
+                    <i class="fab fa-python"></i>
+                    <p>Python / Django</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section container">
+        <h2 class="text-center mb-4 text-primary">Projects</h2>
+
+        <div class="project-card border-start border-5 border-primary">
+            <img src="project1.png" alt="CallForPapers Project Screenshot">
+            <div>
+                <h4 class="text-dark">CallForPapers.us</h4>
+                <p>A dynamic academic platform for journal submissions and event management. Built using CodeIgniter 4
+                    with features like journal approvals, event posting, and user authentication.</p>
+                <a href="https://callforpapers.us/callforpapernew3" class="btn btn-outline-primary btn-sm"
+                    target="_blank">Visit Project</a>
+            </div>
+        </div>
+
+        <div class="project-card border-start border-5 border-info">
+            <img src="project2.png" alt="Python PDF Email Extractor">
+            <div>
+                <h4 class="text-dark">PDF Email Extractor (Python)</h4>
+                <p>This tool fetches PDFs using a keyword (like “cancer”), extracts author emails, and exports them to
+                    Excel. A time-saving solution for research communication and outreach.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Kalla Jyothish | Portfolio Website
+    </footer>
+
+</body>
+
+</html>
